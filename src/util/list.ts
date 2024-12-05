@@ -1,23 +1,23 @@
 export const arraysEqual = (a: any[], b: any[]) => {
-  if (a === b) return true;
-  if (a == null || b == null) return false;
-  if (a.length !== b.length) return false;
+  if (a === b) return true
+  if (a == null || b == null) return false
+  if (a.length !== b.length) return false
 
   for (var i = 0; i < a.length; ++i) {
-    if (a[i] !== b[i]) return false;
+    if (a[i] !== b[i]) return false
   }
-  return true;
-};
+  return true
+}
 
 export const remove2dDuplicates = (arr: any[][]): any[][] => {
-  const uniqueArray: any[][] = [];
-  const map = new Map<string, boolean>();
+  const uniqueArray: any[][] = []
+  const map = new Map<string, boolean>()
   for (const subArr of arr) {
-    const key = JSON.stringify(subArr);
+    const key = JSON.stringify(subArr)
     if (!map.has(key)) {
-      uniqueArray.push(subArr);
-      map.set(key, true);
+      uniqueArray.push(subArr)
+      map.set(key, true)
     }
   }
-  return uniqueArray;
-};
+  return uniqueArray
+}
