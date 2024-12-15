@@ -11,5 +11,8 @@
   },
   "scripts": {
     "format": "prettier --write ."
+  },
+  "dependencies": {
+    "mathjs": "^14.0.1"
   }
 }
